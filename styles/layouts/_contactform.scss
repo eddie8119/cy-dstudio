@@ -1,0 +1,127 @@
+.contactUs {
+  width: 100%;
+  padding-top: 40px; 
+  position: relative; 
+  .form__bg {
+    background-color: $orange-bg;
+    height: 450px; 
+    margin-bottom: 450px;   
+    .form__bg__img {
+      width: 100%;
+      height: 450px;    
+      @include background__img__basic;    
+      opacity: .4;      
+    } 
+  }
+  .contact__panel {
+    padding:0 24px;
+    position: absolute;
+    top:125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .hero__content {    
+    text-align: center;        
+    .hero__content__title {
+      font-size: calculateRem(48);
+      line-height: 48px;
+      font-weight: 900;        
+      color: $white-tx;
+    }
+    .hero__content__description {
+        @include contentText;
+        color: $heading-tx-color;
+        font-weight: 600;       
+    }
+  } 
+  .form__wrapper {  
+    margin-top: 30px;  
+    text-align: center;    
+    right: 0;
+    left: 0;
+    max-width: 350px;
+    min-width: 250px; 
+    .form {       
+      padding: 2rem;
+      border-radius: 20px;
+      background-color: $main-bg-color;
+      @include border__shadow;    
+    }
+    input,
+    textarea {
+      width: 100%;
+      height: 2.5rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-bottom:1px solid $para-tx-color;
+      @include contentText;
+      margin-top: 0;
+    }
+    textarea {
+      height: 8rem;
+      margin-bottom: 2rem;
+    }
+    .form__submit__btn {    
+      @include mainBtn;
+      @include orangeBtn;
+      width: 100px;
+      &:hover,  &:focus  {
+          cursor: pointer;
+          background-color: $heading-tx-color;
+          color: $white-tx;
+          border: 2px solid $white-tx;
+      }   
+    }   
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .contactUs {
+    .form__bg {      
+      margin-bottom: 350px;
+    }   
+    .contact__panel { 
+      width: 100%;     
+      padding:0 39px;
+      flex-direction: row;
+      justify-content: space-between;      
+      top:240px; 
+      .hero__content {
+        width: 35%;
+        margin-left: 40px;
+      }
+      .hero__content__description {
+        @include contentText;
+        color: $para-tx-color;
+        font-weight: 300;       
+      }
+      // .form__wrapper{
+      //   width: 45%;
+      // }    
+    }
+  }
+  .hero__content__title,
+  .hero__content__description{
+    text-align:left;
+  }
+}
+@media screen and (min-width: 1280px) {  
+  .contactUs {
+    padding:0 165px;   
+    .contact__panel {
+      top:200px; 
+      width: 70%;
+      padding:0;
+      .hero__content {
+        width: 30%;
+      }
+    }
+  }
+  .hero__content__title,
+  .hero__content__description{
+    text-align:center;
+  }
+}

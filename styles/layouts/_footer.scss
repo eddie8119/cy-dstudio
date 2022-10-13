@@ -1,0 +1,45 @@
+.footer__content { 
+    padding: 20px;    
+    background-color: $decor-element-color;
+    @include contentText;
+    color: $heading-tx-color;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .footer__title {        
+        font-size: calculateRem(24);
+        font-weight: 900;
+        margin-bottom: 40px;
+    }
+    .company__info__title{
+        font-weight: 700;
+    }	
+    .mapouter,
+    .park__image__wrapper {
+        margin: 0 auto;            
+    }    
+    .park__image {                  
+        @include background__img__basic;
+        width: 300px;
+        height: 300px;            
+    }
+    .company__info__wrapper,
+    .mapouter {
+        margin-bottom: 30px;
+    }   
+}
+
+@media screen and (min-width: 680px) {
+    .footer__content {
+        padding: 30px 165px 5px 165px;        
+    }    
+    .footer__wrapper {        
+        display: flex;        
+        justify-content:space-around;
+    }
+    .company__info__wrapper,
+    .mapouter {
+        margin-bottom: 0px;
+    }  
+}

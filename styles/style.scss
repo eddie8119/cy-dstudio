@@ -1,0 +1,37 @@
+@import "./abstract/reset";
+@import "./abstract/variables";
+@import "./abstract/typography";
+@import "./abstract/mixins";
+@import "./abstract/size";
+@import "./layouts/header";
+@import "./layouts/main";
+@import "./layouts/primary";
+@import "./layouts/contactform";
+@import "./layouts/feedback";
+@import "./layouts/timeline";
+@import "./layouts/footer";
+
+
+@keyframes slideInLeft {
+    from {
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInLeft {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+   // animation-timing-function: ease-in-out;
+  } 
+
+
+//max width of container
+.wrapper {
+    max-width: 1480px;
+    margin: 0 auto;
+}
