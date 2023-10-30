@@ -765,7 +765,7 @@ header .navbar-toggle-label .hamburger::after {
     height: 65px;
   }
   .header__header .nav-nav,
-.header__header .nav-item {
+  .header__header .nav-item {
     all: unset;
   }
   .header__header .nav-nav {
@@ -997,7 +997,7 @@ section {
     margin-top: 48px;
   }
   .primary .primary__img1__img,
-.primary .primary__img2__img {
+  .primary .primary__img2__img {
     max-height: 420px;
   }
   .primary .primary__img1 {
@@ -1028,7 +1028,7 @@ section {
     position: relative;
   }
   .primary .primary__img1__img,
-.primary .primary__img2__img {
+  .primary .primary__img2__img {
     max-height: 500px;
   }
   .primary::before {
@@ -1186,7 +1186,7 @@ section {
     font-weight: 300;
   }
   .hero__content__title,
-.hero__content__description {
+  .hero__content__description {
     text-align: left;
   }
 }
@@ -1203,7 +1203,7 @@ section {
     width: 30%;
   }
   .hero__content__title,
-.hero__content__description {
+  .hero__content__description {
     text-align: center;
   }
 }
@@ -1387,6 +1387,30 @@ time {
   opacity: 1;
 }
 
+@media (min-width: 690px) and (max-width: 900px) {
+  .timeline > ul > li > div {
+    width: 300px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -340px;
+  }
+}
+@media (min-width: 530px) and (max-width: 690px) {
+  .timeline > ul > li > div {
+    width: 200px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -240px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .timeline > ul > li > div {
+    width: 150px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -190px;
+  }
+}
 .footer__content {
   padding: 20px;
   background-color: #E8EFF2;
@@ -1437,17 +1461,8 @@ time {
     justify-content: space-around;
   }
   .company__info__wrapper,
-.mapouter {
+  .mapouter {
     margin-bottom: 0px;
-  }
-}
-@-webkit-keyframes slideInLeft {
-  from {
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
-  to {
-    transform: translate3d(0, 0, 0);
   }
 }
 @keyframes slideInLeft {
@@ -1460,10 +1475,8 @@ time {
   }
 }
 .slideInLeft {
-  -webkit-animation-name: slideInLeft;
-          animation-name: slideInLeft;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-name: slideInLeft;
+  animation-duration: 1s;
 }
 
 .wrapper {

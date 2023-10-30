@@ -102,3 +102,28 @@ time {
   visibility: visible;
   opacity: 1;
 }
+
+@media(min-width: 690px) and (max-width: 900px){
+  .timeline > ul > li > div {
+    width: 300px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -340px;  
+  }
+}
+@media(min-width: 530px) and (max-width: 690px){
+  .timeline > ul > li > div {
+    width: 200px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -240px;  
+  }
+}
+@media screen and (max-width: 530px){
+  .timeline > ul > li > div {
+    width: 150px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -190px;  
+  }
+}
